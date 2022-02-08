@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">WeatherApp</string>
+    <string name="customer">Müşteriyim</string>
+    <string name="cashier">Kasiyerim</string>
+    <string name="ok">Tamam</string>
+    <string name="dismiss">Vazgeç</string>
+    <string name="cancel_description">Bilgi</string>
+    <string name="no">Hayır</string>
+    <string name="yes">Tamam</string>
+    <string name="update_password_description">Açıklama</string>
+    <string name="info">Bilgi</string>
+    <string name="generate_qr_code">QR Kod Üret</string>
+    <string name="status_1s">Ödeme Durumu : %1s</string>
+    <string name="qr_code">QR Kodu</string>
+    <string name="read_qr_code">QR Kod Oku</string>
+    <string name="searching_for_qr_code">Kamerayı QR Kod\'a Tutunuz</string>
+    <string name="cant_found_product">Product Can\'t Found!</string>
+    <string name="payment_status_waiting">Bekleniyor</string>
+    <string name="payment_status_proceed">Devam Ediyor</string>
+    <string name="payment_status_success">Başarılı</string>
+    <string name="payment_status_fail">Başarısız</string>
+    <string name="product_found_1s">Product Found %1s</string>
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.mobilion.weatherapp.features.cashier.domain.viewmodel.CashierDashboardViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <FrameLayout
+            android:layout_width="@dimen/margin_0dp"
+            android:layout_height="@dimen/margin_0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!--Frame layout is required as we are using camera view-->
+            <!--Below is the scannerliveview which will scan QR code-->
+            <eu.livotov.labs.android.camview.ScannerLiveView
+                android:id="@+id/cameraView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!--TextView to display the scanned data-->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/scannedTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:text="@string/searching_for_qr_code"
+                android:textColor="@color/black" />
+
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
